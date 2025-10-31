@@ -1,0 +1,213 @@
+
+
+
+.topbar-text {
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: xx-small;
+  color: white;
+  white-space: nowrap;
+}
+
+.topbar-lang {
+
+
+  font-size: 0.875rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.side-listSpacing {
+  font-size: smaller;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.date-Time {
+  font-size: xx-small;
+}
+
+.category-Date-Time {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 13px;
+  font-size: small;
+  color: black;
+}
+.centering-Text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  text-align: center;
+}
+.main {
+  position: relative;
+  
+}
+.btn-customize {
+  background-color: red;
+  color: white;
+}
+
+.category-btn {
+  width: 120px;
+  background-color: rgb(62, 247, 62);
+}
+
+.category-link {
+  color: rgb(62, 247, 62);
+}
+
+.category-main {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+footer h6 {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: black;
+}
+.nav-link:hover {
+  color: rgb(145, 210, 240);
+}
+
+.carousel-inner img {
+  height: 235px;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.shopNow:hover {
+  color: rgb(142, 196, 240) !important;
+}
+
+.sectionList {
+  color: red;
+  font-weight: 600;
+}
+
+.badge-Color {
+  display: inline-flex;
+  background-color: red;
+  color: red;
+  width: 1px;
+  height: 30px;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.content-centering {
+  display: inline-flex;
+  align-items: center;
+}
+
+.catagory-customize {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.catagory-customize:hover {
+  background-color: rgb(209, 238, 236);
+  cursor: pointer;
+}
+.catagory-customize .icon {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alignment {
+  text-align: start;
+}
+
+.img-sizing {
+  width: 100%;
+  height: 350px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.4); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.shop-now {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+.big-card {
+  height: 100%;
+  min-height: 500px; 
+}
+.small-card {
+  height: 247px;
+  height: 100%;
+}
+
+
+.card-img-top{
+    height: 250px !important;
+    
+}
+
+.icon-c{
+    color: white;
+    background-color: black;
+    border: 3px solid grey;
+    border-radius: 50%;
+    height: 60px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-i{
+    font-size:small;
+    font-weight: 700;
+}
+.text-ii{
+    font-size:7px;
+    justify-content: center;
+}

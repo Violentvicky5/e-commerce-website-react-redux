@@ -4,6 +4,7 @@ import { addItem } from "../features/cart/cartSlice";
 
 const Items = () => {
   const [items, setItems] = useState([]);
+  const [originalItems,setOriginalItems]=useState([]);
   const dispatch = useDispatch();
 
 
@@ -12,7 +13,8 @@ const Items = () => {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((data) => setItems(data));
+      .then((data) => {setItems(data);setOriginalItems(data)});
+      
   }, []);
 
 
@@ -20,8 +22,35 @@ const Items = () => {
     item.title.toLowerCase().includes(searchQuery)
   );
 
+
+const sorting=(e)=>{
+ const value= e.target.value;
+
+ let sorted=[...items];
+  if(value==="H-L"){
+    sorted.sort((a,b)=> b.price - a.price);
+  }else if(value==="L-H"){
+    sorted.sort((a,b)=> a.price - b.price);
+  }else{
+sorted=[...originalItems];
+  }
+  setItems(sorted);
+}
+
+
+
+
   return (
     <div className="mb-4 mt-4 container">
+      <div className="m-1" style={{textAlign:"end"}}>
+         <label className="fw-bold m-2">Sort</label>
+        <select onChange={sorting} className="bg-warning rounded mb-2">
+        
+          <option value="All Items">All Items</option>
+          <option value="H-L">H-L</option>
+          <option value="L-H">L-H</option>
+        </select>
+      </div>
       <div className="row g-2">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => (

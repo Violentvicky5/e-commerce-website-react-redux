@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleCartVisibility } from "../features/cart/cartSlice";
-import { setSearchQuery } from "../features/search/SearchSlice"
+import { setSearchQuery } from "../features/search/SearchSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -34,16 +34,42 @@ const Header = () => {
           <a className="navbar-brand fw-bold" href="#">
             Exclusive
           </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">About</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Sign Up</a></li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Sign Up
+                </a>
+              </li>
             </ul>
 
-           
             <form className="d-flex" style={{ width: "250px" }}>
               <input
                 type="text"
@@ -58,13 +84,15 @@ const Header = () => {
               ></i>
             </form>
 
-            
             <div
               className="d-flex align-items-center ms-3"
               onClick={() => dispatch(toggleCartVisibility())}
               style={{ cursor: "pointer" }}
             >
-              <i className="fa fa-cart-shopping" style={{ color: "black", fontSize: "20px" }}></i>
+              <i
+                className="fa fa-cart-shopping"
+                style={{ color: "black", fontSize: "20px" }}
+              ></i>
               {cartCount > 0 && (
                 <span className="badge bg-warning ms-1">{cartCount}</span>
               )}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../features/cart/cartSlice";
+import { addItem } from "../features/cart/CartSlice";
 
 const Items = () => {
   const [items, setItems] = useState([]);

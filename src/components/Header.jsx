@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleCartVisibility } from "../features/cart/cartSlice";
+import { toggleCartVisibility } from "../features/cart/CartSlice";
 import { setSearchQuery } from "../features/search/SearchSlice";
 
 const Header = () => {

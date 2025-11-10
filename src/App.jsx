@@ -6,7 +6,7 @@ import Badge from "./components/Badge";
 import Items from "./components/Items";
 import CartItems from "./components/CartItems";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCartVisibility } from "./features/cart/cartSlice";
+import { toggleCartVisibility } from "./features/cart/CartSlice";
 
 const App = () => {
   const dispatch = useDispatch();

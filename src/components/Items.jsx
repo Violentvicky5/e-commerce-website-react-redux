@@ -27,6 +27,7 @@ const sorting=(e)=>{
  const value= e.target.value;
 
  let sorted=[...items];
+ 
   if(value==="H-L"){
     sorted.sort((a,b)=> b.price - a.price);
   }else if(value==="L-H"){

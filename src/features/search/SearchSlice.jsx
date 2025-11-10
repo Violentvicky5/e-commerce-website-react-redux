@@ -12,6 +12,6 @@ const searchSlice = createSlice({
   },
 });
 
-export const { setSearchQuery, setSortAsc, setSortDsc, setProducts } =
+export const { setSearchQuery } =
   searchSlice.actions;
 export default searchSlice.reducer;
